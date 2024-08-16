@@ -21,16 +21,16 @@ export default function Home() {
     <main>
       <Header title='Home' />
       <ContentOnPage>
-        <Verticalbar children={undefined}>
-
+        <Verticalbar>
+          123
         </Verticalbar>
         <Verticalbar>
           <Card>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla consequuntur illum quibusdam quis corporis doloribus sapiente ipsum! Repudiandae praesentium ad quis. Eaque non hic incidunt voluptatum quasi porro minima ipsam.
           </Card>
         </Verticalbar>
-        <Verticalbar children={undefined}>
-
+        <Verticalbar>
+          123
         </Verticalbar>
       </ContentOnPage>
 
