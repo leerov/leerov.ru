@@ -1,6 +1,6 @@
 'use client'
 
-import KeyBinds from "@/server_stuff/keybinds"
+import KeyBinds from "@/service/keybinds"
 import SparklesEffect from "@/ui/Sparks/SparklesEffect"
 import { motion } from "framer-motion"
 

@@ -1,5 +1,5 @@
 {
-  "name": "leerov_upd",
+  "name": "leerov",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -9,16 +9,24 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@prisma/client": "^5.18.0",
     "framer-motion": "^11.3.24",
     "gulp": "^5.0.0",
+    "js-cookie": "^3.0.5",
     "next": "14.2.5",
     "node-telegram-bot-api": "^0.66.0",
+    "pg": "^8.12.0",
+    "pg-hstore": "^2.3.4",
     "react": "^18",
     "react-dom": "^18",
-    "sass": "^1.77.8"
+    "sass": "^1.77.8",
+    "sequelize": "^6.37.3",
+    "sqlite3": "^5.1.7",
+    "telegraf": "^4.16.3"
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/node-fetch": "^2.6.11",
     "@types/node-telegram-bot-api": "^0.64.7",
     "@types/react": "^18",
     "@types/react-dom": "^18",

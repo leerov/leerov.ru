@@ -1,7 +1,8 @@
 import styles from "./header.module.scss";
 import Link from "next/link";
 import { Yanone_Kaffeesatz } from "next/font/google";
-import KeyBinds from "@/server_stuff/keybinds";
+import KeyBinds from "@/service/keybinds";
+import LoginButton from "../LoginButton/LoginButton";
 
 const yanone_Kaffeesatz = Yanone_Kaffeesatz({ subsets: ["latin"], weight: "400" });
 
@@ -21,11 +22,7 @@ export default function Header(props: any) {
                 </div>
             </div>
 
-            <a href="https://t.me/${process.env.leerovrubot}?start=login" className={styles.admin}>
-                <div className={styles.admin_border_wrap}>
-                    <div className={styles.admin_center}></div>
-                </div>
-            </a>
+            <LoginButton />
 
 
 

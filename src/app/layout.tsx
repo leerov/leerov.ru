@@ -2,8 +2,12 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.scss";
-import SparklesEffect from "@/ui/Sparks/SparklesEffect";
+
 const inter = Inter({ subsets: ["latin"] });
+
+fetch('/api/setWebhook');
+
+
 
 export const metadata: Metadata = {
   title: {

@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src"
+		},
+		{
+			"path": "out"
+		},
+		{
+			"path": "../workshops/trash"
+		}
+	],
+	"settings": {
+		"terminal.explorerKind": "external",
+		"liveServer.settings.multiRootWorkspaceName": "out"
+	}
+}
