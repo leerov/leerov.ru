@@ -1,3 +1,4 @@
+// service\dbmanager.tsx
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
@@ -6,7 +7,7 @@ const prisma = new PrismaClient();
 export async function writeData(parameter: string, telegramId: string): Promise<void> {
 	try {
 		await prisma.user.upsert({
-			where: { parameter },
+			where: { parameter },  // Уникальное поле
 			update: { telegramId },
 			create: { parameter, telegramId },
 		});
@@ -19,7 +20,7 @@ export async function writeData(parameter: string, telegramId: string): Promise<
 export async function readData(parameter: string): Promise<string | null> {
 	try {
 		const user = await prisma.user.findUnique({
-			where: { parameter },
+			where: { parameter },  // Уникальное поле
 		});
 		return user ? user.telegramId : null;
 	} catch (error) {

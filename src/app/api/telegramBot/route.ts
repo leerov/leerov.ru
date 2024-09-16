@@ -1,6 +1,5 @@
 import { Telegraf } from 'telegraf';
-
-import type { NextApiRequest, NextApiResponse } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
 import { writeData } from '@/service/dbmanager';
 
 const bot = new Telegraf(process.env.TELEGRAM_BOT_TOKEN!);
@@ -27,11 +26,11 @@ bot.on('message', async (ctx) => {
 	await ctx.reply('Сообщения обрабатываются только после /start с нужным параметром.');
 });
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-	if (req.method === 'POST') {
-		bot.handleUpdate(req.body);
-		res.status(200).end();
-	} else {
-		res.status(405).end();
-	}
+// Новый способ задания конфигурации
+export const dynamic = 'force-dynamic'; // Пример для маршрута, который всегда динамичен
+export const runtime = 'nodejs'; // Выбор окружения выполнения
+
+export async function POST(req: NextRequest) {
+	await bot.handleUpdate(await req.json());
+	return new NextResponse('OK', { status: 200 });
 }

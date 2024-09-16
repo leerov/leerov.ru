@@ -11,6 +11,9 @@
 		},
 		{
 			"path": "../workshops/trash"
+		},
+		{
+			"path": "../../../Users/vovaz/.ssh"
 		}
 	],
 	"settings": {

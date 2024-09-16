@@ -14,7 +14,8 @@ generator client {
 }
 
 model User {
-  id        Int     @id @default(autoincrement())
-  parameter String
+  id         Int    @id @default(autoincrement())
+  parameter  String @unique
   telegramId String
 }
+

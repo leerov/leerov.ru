@@ -11,6 +11,16 @@
 				"kind": "test",
 				"isDefault": true
 			}
+		},
+		{
+			"type": "typescript",
+			"tsconfig": "tsconfig.json",
+			"option": "watch",
+			"problemMatcher": [
+				"$tsc-watch"
+			],
+			"group": "build",
+			"label": "tsc: отслеживание — tsconfig.json"
 		}
 	]
 }

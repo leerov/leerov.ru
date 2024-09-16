@@ -1,17 +1,16 @@
+// next.config.mjs
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-	/* output: 'export', */
-
-	// Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
-	// trailingSlash: true,
-
-	// Optional: Prevent automatic `/me` -> `/me/`, instead preserve `href`
-	// skipTrailingSlashRedirect: true,
-
-	// Optional: Change the output directory `out` -> `dist`
+	// Другие настройки
 	distDir: 'out',
+
+	// Добавьте настройку для разрешенных доменов изображений
+	images: {
+		domains: ['api.telegram.org'],
+	},
 }
 
 export default nextConfig
