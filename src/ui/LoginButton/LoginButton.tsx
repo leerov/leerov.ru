@@ -6,7 +6,7 @@ import styles from './LoginButton.module.scss';
 export default function LoginButton() {
 	const [photoBlobUrl, setPhotoBlobUrl] = useState<string | null>(null);
 
-	useEffect(() => {
+	/* useEffect(() => {
 		const fetchData = async () => {
 			try {
 				const photoResponse = await fetch('/api/get-photo');
@@ -20,7 +20,7 @@ export default function LoginButton() {
 		};
 
 		fetchData();
-	}, []);
+	}, []); */
 
 	return (
 		photoBlobUrl ? (

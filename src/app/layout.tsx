@@ -5,7 +5,7 @@ import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
-fetch('/api/setWebhook');
+/* fetch('/api/setWebhook'); */
 
 
 

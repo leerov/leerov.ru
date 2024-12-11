@@ -75,14 +75,13 @@ export default function CircleMenu({ menuItems }: CircleMenuProps) {
 							<Image
 								src={item.icon}
 								alt={item.label}
-								layout="responsive"
-								width={100}
+								width={100} // указываем размеры явно
 								height={100}
-								style={{ maxWidth: '50%', height: 'auto' }}
+								style={{ maxWidth: '50%', height: 'auto' }} // или укажи fill и objectFit
 							/>
 							<h4 className={`${yanone_Kaffeesatz.className} ${styles.buttonText}`}>{item.label}</h4>
-
 						</Link>
+
 					</div>
 				))}
 			</div>
