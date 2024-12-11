@@ -1,0 +1,13 @@
+$bar-color: rgb(97, 9, 164);
+$button-gradient: linear-gradient(rgb(124, 2, 199), rgb(192, 87, 239), rgb(254, 117, 255));
+$background-color: rgb(27, 3, 48);
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  min-height: 100vh;
+  background-color: $background-color;
+}

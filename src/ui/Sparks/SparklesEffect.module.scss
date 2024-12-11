@@ -1,0 +1,27 @@
+/* SparklesEffect.module.scss */
+.sparkle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vh;
+    height: 100vw;
+    background-color: yellow;
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 0;
+    animation: flyAway var(--duration) forwards;
+    --x: 0;
+    --y: 0;
+}
+
+@keyframes flyAway {
+    from {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+
+    to {
+        opacity: 0;
+        transform: translate(var(--x), var(--y));
+    }
+}

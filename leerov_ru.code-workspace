@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "src"
+		},
+		{
+			"path": "out"
+		},
+		{
+			"path": "../workshops/trash"
+		},
+		{
+			"path": "../../../Users/vovaz/.ssh"
+		}
+	],
+	"settings": {
+		"terminal.explorerKind": "external",
+		"liveServer.settings.multiRootWorkspaceName": "out"
+	}
+}
