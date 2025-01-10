@@ -5,10 +5,6 @@ import "./globals.scss";
 
 const inter = Inter({ subsets: ["latin"] });
 
-/* fetch('/api/setWebhook'); */
-
-
-
 export const metadata: Metadata = {
   title: {
     default: "Leerov",
