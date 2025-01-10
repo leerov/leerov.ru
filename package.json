@@ -16,7 +16,6 @@
     "gulp": "^5.0.0",
     "js-cookie": "^3.0.5",
     "next": "^14.2.22",
-    "node-telegram-bot-api": "^0.66.0",
     "pg": "^8.12.0",
     "pg-hstore": "^2.3.4",
     "react": "^18.3.1",
@@ -27,6 +26,7 @@
     "telegraf": "^4.16.3"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/node-fetch": "^2.6.11",
     "@types/node-telegram-bot-api": "^0.64.7",

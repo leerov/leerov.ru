@@ -1,7 +1,5 @@
 'use client'
 
-import KeyBinds from "@/service/keybinds"
-import SparklesEffect from "@/ui/Sparks/SparklesEffect"
 import { motion } from "framer-motion"
 
 export default function Template({

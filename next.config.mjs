@@ -4,13 +4,20 @@
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-	// Другие настройки
 	distDir: 'out',
-
-	// Добавьте настройку для разрешенных доменов изображений
+  
 	images: {
-		domains: ['api.telegram.org'],
+	  domains: ['api.telegram.org'],
 	},
-}
-
-export default nextConfig
+  
+	webpack(config) {
+	  config.module.rules.push({
+		test: /\.svg$/,
+		use: ['@svgr/webpack'],
+	  });
+	  return config;
+	},
+  };
+  
+  export default nextConfig;
+  
